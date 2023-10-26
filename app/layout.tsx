@@ -15,7 +15,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar />
+        <header className="navbar z-10 sticky top-0 bg-black text-white">
+          <Navbar />
+        </header>
         {children}
       </body>
     </html>
