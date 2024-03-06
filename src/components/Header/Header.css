@@ -22,6 +22,10 @@ ul {
   cursor: pointer;
 }
 
+/* li {
+  transition: all 0.3s;
+} */
+
 li:hover {
   color: var(--main--white);
   border-bottom: 1px solid var(--blue--details);

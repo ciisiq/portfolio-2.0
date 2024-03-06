@@ -27,6 +27,7 @@ body {
   height: 100vh;
   background-color: var(--main--background);
   color: var(--main--white);
+  overflow-x: hidden;
 }
 
 ul {

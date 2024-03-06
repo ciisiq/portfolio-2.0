@@ -11,3 +11,5 @@
 Packeges used:
 
 Tag cloud: https://github.com/cong-min/TagCloud?tab=readme-ov-file#options
+
+To make the curve: https://www.shapedivider.app/
