@@ -42,3 +42,12 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.section-title {
+  border-bottom: 0.1rem solid var(--blue--details);
+  max-width: 50%;
+  letter-spacing: 0.5rem;
+  font-weight: 400;
+  padding-bottom: 0.3rem;
+  color: var(--blue--details);
+}

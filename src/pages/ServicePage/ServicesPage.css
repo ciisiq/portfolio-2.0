@@ -1,0 +1,27 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  margin: 2rem;
+}
+
+.service-title {
+  margin-bottom: 2rem;
+}
+
+.container-cardservices {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  justify-items: center;
+}
+
+@media (min-width: 1500px) {
+  .container-cardservices {
+    max-width: 50%;
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     */
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+  }
+}
