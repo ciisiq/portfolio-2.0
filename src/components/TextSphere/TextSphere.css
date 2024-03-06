@@ -1,0 +1,15 @@
+.tagcloud {
+  display: inline-block;
+  font-weight: 600;
+  letter-spacing: 0.0625em;
+  font-size: 1em;
+}
+
+.tagcloud--item {
+  color: var(--blue--details);
+  text-transform: uppercase;
+}
+
+.tagcloud--item:hover {
+  color: var(--main--white);
+}

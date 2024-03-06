@@ -7,3 +7,7 @@
   npm install
   npm run dev
 ```
+
+Packeges used:
+
+Tag cloud: https://github.com/cong-min/TagCloud?tab=readme-ov-file#options
