@@ -39,7 +39,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  /* border: 1px solid white; */
   height: 50%;
   width: 50%;
 }
@@ -70,6 +69,7 @@
   letter-spacing: 0.1rem;
   /* border: 0.01rem solid var(--main--white); */
   transition: all 0.3s;
+  z-index: 100;
 }
 
 .contactbtn:hover {

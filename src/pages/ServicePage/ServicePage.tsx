@@ -1,6 +1,6 @@
 import ServiceCard from '../../components/ServiceCard/ServiceCard';
 import './ServicesPage.css';
-import { servicesOptions } from '../../util/data';
+import { servicesOptions } from '../../util/dataServices';
 
 export default function ServicePage() {
   return (
