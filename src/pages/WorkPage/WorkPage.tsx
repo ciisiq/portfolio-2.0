@@ -55,10 +55,10 @@ export default function WorkPage({ projects }: ListProjectsProps) {
         </select>
       </div>
       <div className="container-projects">
-        {projects.length === 0 ? (
+        {projectList.length === 0 ? (
           <p className="no-projects">No Projects found</p>
         ) : (
-          listProjects.map((project) => (
+          projectList.map((project) => (
             <ProjectsCard
               key={project.id}
               id={project.id}
