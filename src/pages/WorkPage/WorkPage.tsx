@@ -1,10 +1,7 @@
 import ProjectsCard from '../../components/ProjectsCard/ProjectsCard';
 import './WorkPage.css';
-import { listProjects } from '../../util/dataProjects';
 import { Project } from '../../util/dataProjects';
 import { useEffect, useState } from 'react';
-import { type Project as Projectlist } from '../../util/dataProjects';
-// import Filter from '../../components/Filter/Filter';
 
 interface ListProjectsProps {
   projects: Project[];
