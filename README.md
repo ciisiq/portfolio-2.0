@@ -1,19 +1,17 @@
-# My update portfolio + service
+# My portfolio 2.0
 
-- To start the project
+See here: https://cintiadev-portfolio.netlify.app/
+
+#### To start the project
 
 ```
-  cd portfolio-2.0
   npm install
   npm run dev
 ```
 
-Packeges used:
+### Packeges used:
 
-Tag cloud: https://github.com/cong-min/TagCloud?tab=readme-ov-file#options
-
-To make the curve: https://www.shapedivider.app/
-
-Moving cards slide: https://www.react-fast-marquee.com/
-
-Live site: https://cintiadev-portfolio.netlify.app/
+Tag cloud: [Tagcloud npm](https://github.com/cong-min/TagCloud)<br />
+To make the curve: [Make the curve](https://www.shapedivider.app/)<br />
+Moving cards slide: [Marquee npm](https://www.react-fast-marquee.com/)<br />
+Schedule a time: [Calendly npm](https://blog.sachinchaurasiya.dev/how-to-add-calendly-to-your-reactjs-project#heading-inlinewidget)<br />
