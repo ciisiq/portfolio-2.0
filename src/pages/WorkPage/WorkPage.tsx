@@ -43,16 +43,23 @@ export default function WorkPage({ projects }: ListProjectsProps) {
 
   return (
     <section className="workpage">
-      <h2 className="section-title">LATEST WORK</h2>
-      <div>
-        <select onChange={(e) => handleCategoryChange(e.target.value)}>
-          <option value="">All Categories</option>
-          {categories.map((category, index) => (
-            <option key={index} value={category}>
-              {category}
+      <div className="work-top">
+        <h2 className="section-title">LATEST WORK</h2>
+        <div>
+          <select
+            className="category"
+            onChange={(e) => handleCategoryChange(e.target.value)}
+          >
+            <option className="category-content" value="">
+              All Categories
             </option>
-          ))}
-        </select>
+            {categories.map((category, index) => (
+              <option className="category-content" key={index} value={category}>
+                {category}
+              </option>
+            ))}
+          </select>
+        </div>
       </div>
       <div className="container-projects">
         {projectList.length === 0 ? (

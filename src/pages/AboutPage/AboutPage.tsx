@@ -7,7 +7,7 @@ export default function AboutPage() {
   return (
     <section className="details">
       <div className="about">
-        <h3 className="section-title service-title">ABOUT ME</h3>
+        <h3 className="section-title about-title">ABOUT ME</h3>
 
         <div className="left-text">
           <p>
@@ -37,7 +37,7 @@ export default function AboutPage() {
         </div>
       </div>
       <div className="tools-used">
-        <h3 className="section-title service-title">WHAT I USE</h3>
+        <h3 className="section-title about-title">WHAT I USE</h3>
         <div className="tools-container">
           <Marquee>
             {toolsDev.map((tool) => (

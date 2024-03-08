@@ -6,6 +6,7 @@ nav {
   font-weight: 300;
   color: var(--blue--details);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  max-width: 99%;
 }
 
 .logo {
@@ -39,7 +40,6 @@ li:hover {
   padding: 0.5rem;
   border: none;
   cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .dropdown {
@@ -52,14 +52,13 @@ li:hover {
   display: none;
   position: absolute;
   background-color: var(--light--dark);
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  max-width: 40px;
   z-index: 1;
 }
 
 .dropdown-content a {
   color: var(--main--white);
-  padding: 12px 16px;
+  padding: 12px 8px;
   text-decoration: none;
   display: block;
 }

@@ -5,10 +5,6 @@
   margin: 2rem;
 }
 
-.service-title {
-  margin-bottom: 2rem;
-}
-
 .container-cardservices {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
