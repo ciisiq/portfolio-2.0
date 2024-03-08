@@ -1,11 +1,75 @@
 .contactpage {
+  display: flex;
+  /* justify-content: space-around; */
+  margin: 0rem 2rem;
+  /* border: 0.5rem solid red; */
+  align-items: center;
+  height: 20vh;
+  gap: 2rem;
 }
 
-/* .calendly-inline-widget {
-  min-width: 320px;
-  height: 700px;
-} */
+.verticalLine {
+  border-left: 0.1rem solid var(--blue--details);
+  height: 100px;
+}
 
-.App {
+.left {
+  width: 50%;
+}
+
+.calendar {
+  margin: 0 auto;
+  width: 50%;
+  /* border: 0.5rem solid red; */
+}
+
+.calendar > h2 {
+  margin-bottom: 1rem;
   color: var(--blue--details);
+  font-weight: 500;
+}
+
+.calendar > button {
+  background-color: var(--blue--details);
+  color: var(--main--white);
+  border-radius: 0.5rem;
+  padding: 0.8rem 2.5rem;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border: none;
+  letter-spacing: 0.1rem;
+  transition: all 0.3s;
+  z-index: 100;
+
+  height: 50px;
+  width: 350px;
+}
+
+.calendar > button:hover {
+  transform: translateY(-10px);
+  background-color: transparent;
+  color: var(--blue--details);
+  border: 1px solid var(--blue--details);
+}
+
+.left > h2 {
+  color: var(--blue--details);
+  letter-spacing: 0.2rem;
+  font-size: 2.5rem;
+}
+
+.left > p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.cont-logos {
+  color: var(--blue--details);
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0rem;
 }
