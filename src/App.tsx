@@ -5,6 +5,7 @@ import ContactPage from './pages/ContactPage/ContactPage';
 import HomePage from './pages/HomePage/IntroPage';
 import ServicePage from './pages/ServicePage/ServicePage';
 import WorkPage from './pages/WorkPage/WorkPage';
+import { listProjects } from './util/dataProjects';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <HomePage />
       <ServicePage />
       <AboutPage />
-      <WorkPage />
+      <WorkPage projects={listProjects} />
       <ContactPage />
     </>
   );

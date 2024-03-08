@@ -1,0 +1,23 @@
+.workpage {
+  margin: 2rem;
+  height: 50vh;
+}
+
+.container-projects {
+  display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.no-projects {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 390px) {
+  .container-projects {
+    max-width: 844px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

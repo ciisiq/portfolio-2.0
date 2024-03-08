@@ -15,3 +15,5 @@ Tag cloud: https://github.com/cong-min/TagCloud?tab=readme-ov-file#options
 To make the curve: https://www.shapedivider.app/
 
 Moving cards slide: https://www.react-fast-marquee.com/
+
+Live site: https://cintiadev-portfolio.netlify.app/

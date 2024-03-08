@@ -41,11 +41,21 @@ export default function AboutPage() {
         <div className="tools-container">
           <Marquee>
             {toolsDev.map((tool) => (
-              <ToolsCard id={tool.id} alt={tool.alt} logo={tool.logo} />
+              <ToolsCard
+                key={tool.id}
+                id={tool.id}
+                alt={tool.alt}
+                logo={tool.logo}
+              />
             ))}
 
             {toolsDesign.map((tool) => (
-              <ToolsCard id={tool.id} alt={tool.alt} logo={tool.logo} />
+              <ToolsCard
+                key={tool.id}
+                id={tool.id}
+                alt={tool.alt}
+                logo={tool.logo}
+              />
             ))}
           </Marquee>
 
