@@ -7,15 +7,17 @@ export default function ServicePage() {
     <section className="services">
       <h3 className="section-title service-title">SERVICES</h3>
 
-      <div className="container-cardservices">
-        {servicesOptions.map((service) => (
-          <ServiceCard
-            key={service.id}
-            icon={service.icon}
-            id={service.id}
-            text={service.text}
-          />
-        ))}
+      <div className="contain-container">
+        <div className="container-cardservices">
+          {servicesOptions.map((service) => (
+            <ServiceCard
+              key={service.id}
+              icon={service.icon}
+              id={service.id}
+              text={service.text}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

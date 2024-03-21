@@ -46,17 +46,18 @@ img {
 
 .section-title {
   border-bottom: 0.1rem solid var(--blue--details);
-  min-width: 30%;
+  min-width: 60%;
   max-width: 20%;
   letter-spacing: 0.5rem;
   font-weight: 400;
   padding-bottom: 0.3rem;
   color: var(--blue--details);
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 
 section {
   max-width: 95%;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 600px) {
@@ -65,14 +66,19 @@ section {
     min-width: 80%;
     max-width: 100%;
     font-size: 0.9rem;
-
     margin: 1rem 0;
   }
 
   section {
     max-width: 100%;
     height: 100%;
-
     padding: 1rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  section {
+    width: 70vw;
+    margin: 0 auto;
   }
 }

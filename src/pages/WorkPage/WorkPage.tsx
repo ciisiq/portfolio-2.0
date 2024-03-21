@@ -41,7 +41,7 @@ export default function WorkPage({ projects }: ListProjectsProps) {
   return (
     <section className="workpage">
       <div className="work-top">
-        <h2 className="section-title work-title">LATEST WORK</h2>
+        <h2 className="section-title">LATEST WORK</h2>
         <div>
           <select
             className="category"
@@ -70,6 +70,7 @@ export default function WorkPage({ projects }: ListProjectsProps) {
               title={project.title}
               description={project.description}
               category={project.category}
+              link={project.link}
             />
           ))
         )}

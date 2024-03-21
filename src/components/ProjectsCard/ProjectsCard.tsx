@@ -5,10 +5,25 @@ import { Project } from '../../util/dataProjects';
 
 export default function ProjectsCard(project: Project) {
   const [imageError, setImageError] = useState<boolean>(false);
+  const [expanded, setExpanded] = useState<boolean>(false);
+  const [truncatedDescription, setTruncatedDescription] = useState<string>(
+    truncateText(project.description, 50)
+  );
 
   const handleImageError = () => {
     setImageError(true);
   };
+
+  const toggleExpand = () => {
+    setExpanded(!expanded);
+  };
+
+  function truncateText(text: string, maxLength: number) {
+    if (text.length > maxLength) {
+      return text.substring(0, maxLength) + '...';
+    }
+    return text;
+  }
 
   return (
     <div className="projects-container">
@@ -27,8 +42,21 @@ export default function ProjectsCard(project: Project) {
         <div className="bottom-card">
           <div className="info">
             <h4 className="project-title">{project.title}</h4>
-            <p className="description">{project.description}</p>
-            <p className="category">{project.category}</p>
+
+            <p className={`description ${expanded ? 'expanded' : ''}`}>
+              {expanded ? project.description : truncatedDescription}
+            </p>
+
+            <div className="container-btns">
+              {project.description.length > 50 && (
+                <button className="read-more" onClick={toggleExpand}>
+                  {expanded ? 'Show Less' : 'Read More'}
+                </button>
+              )}
+              <a href={project.link} target="_blank" className="more-link">
+                See more
+              </a>
+            </div>
           </div>
         </div>
       </div>

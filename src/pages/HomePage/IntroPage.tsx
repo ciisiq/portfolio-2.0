@@ -3,7 +3,7 @@ import './IntroPage.css';
 
 export default function IntroPage() {
   return (
-    <section className="intro">
+    <main className="intro">
       <div className="left-side">
         <div className="intro-text-container">
           {' '}
@@ -32,6 +32,6 @@ export default function IntroPage() {
           ></path>
         </svg>
       </div>
-    </section>
+    </main>
   );
 }

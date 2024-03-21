@@ -1,8 +1,13 @@
 .services {
   display: flex;
   flex-direction: column;
-  height: 50vh;
-  margin: 2rem;
+  height: auto;
+  margin-bottom: 4rem;
+}
+
+.contain-container {
+  display: flex;
+  justify-content: center;
 }
 
 .container-cardservices {
@@ -12,13 +17,9 @@
   justify-items: center;
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1300px) {
   .container-cardservices {
-    max-width: 50%;
-    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-     */
     grid-template-columns: repeat(4, 1fr);
-    margin: 0 auto;
   }
 }
 

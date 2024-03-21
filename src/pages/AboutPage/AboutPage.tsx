@@ -1,15 +1,14 @@
 import ToolsCard from '../../components/ToolsCard/ToolsCard';
 import './AboutPage.css';
 import { toolsDev, toolsDesign } from '../../util/dataTools';
-// import Marquee from 'react-fast-marquee';
 
 export default function AboutPage() {
   return (
     <section className="details">
+      {' '}
       <div className="about">
-        <h3 className="section-title about-title">ABOUT ME</h3>
-
-        <div className="left-text">
+        <h3 className="section-title">ABOUT ME</h3>
+        <div className="container-about">
           <p>
             A passionate front-end developer ready to embark on my journey in
             the tech industry. With a background in graphic design, I bring
@@ -37,8 +36,8 @@ export default function AboutPage() {
         </div>
       </div>
       <div className="tools-used">
-        <h3 className="section-title about-title">WHAT I USE</h3>
-        <div className="tools-container">
+        <h3 className="section-title ">WHAT I USE</h3>
+        <div className="container-tools">
           {toolsDev.map((tool) => (
             <ToolsCard
               key={tool.id}
@@ -56,8 +55,6 @@ export default function AboutPage() {
               logo={tool.logo}
             />
           ))}
-
-          {/* <Marquee></Marquee> */}
         </div>
       </div>
     </section>

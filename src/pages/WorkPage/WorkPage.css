@@ -1,7 +1,6 @@
 .workpage {
-  margin: 2rem;
-  height: 50vh;
-  /* border: 0.5rem solid red; */
+  /* height: 50vh; */
+  height: 100%;
 }
 
 .container-projects {
@@ -19,6 +18,8 @@
 .work-top {
   display: flex;
   gap: 2rem;
+  align-items: center;
+  font-size: 0.8em;
 }
 
 /* SELECT CATEGORY */
