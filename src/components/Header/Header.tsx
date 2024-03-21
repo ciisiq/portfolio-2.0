@@ -1,8 +1,8 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import './Header.css';
 
 export default function Header() {
-  const [openMeny, SetOpenMenu] = useState<boolean>(false);
+  // const [openMeny, SetOpenMenu] = useState<boolean>(false);
 
   return (
     <header>

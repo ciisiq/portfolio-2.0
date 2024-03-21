@@ -1,7 +1,7 @@
 import ToolsCard from '../../components/ToolsCard/ToolsCard';
 import './AboutPage.css';
 import { toolsDev, toolsDesign } from '../../util/dataTools';
-import Marquee from 'react-fast-marquee';
+// import Marquee from 'react-fast-marquee';
 
 export default function AboutPage() {
   return (
