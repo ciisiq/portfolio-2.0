@@ -6,9 +6,7 @@ import { Project } from '../../util/dataProjects';
 export default function ProjectsCard(project: Project) {
   const [imageError, setImageError] = useState<boolean>(false);
   const [expanded, setExpanded] = useState<boolean>(false);
-  const [truncatedDescription, setTruncatedDescription] = useState<string>(
-    truncateText(project.description, 50)
-  );
+  const truncatedDescription = truncateText(project.description, 60);
 
   const handleImageError = () => {
     setImageError(true);
