@@ -21,3 +21,14 @@
     margin: 0 auto;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .services {
+    height: 100%;
+    width: 100%;
+    margin: 0rem;
+  }
+  .container-cardservices {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

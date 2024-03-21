@@ -80,3 +80,41 @@
   gap: 1rem;
   padding: 1rem 0rem;
 }
+
+@media screen and (max-width: 600px) {
+  .contactpage {
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .test {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+
+  .verticalLine {
+    display: none;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .calendar {
+    width: 100%;
+  }
+
+  .calendar > button {
+    font-size: 0.8rem;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    justify-content: center;
+  }
+}

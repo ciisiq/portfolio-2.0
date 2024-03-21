@@ -44,3 +44,22 @@
     /* margin: 0 auto; */
   }
 }
+
+@media screen and (max-width: 600px) {
+  .details {
+    width: 100%;
+    margin: 0rem;
+  }
+
+  .tools-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+  }
+
+  .about {
+    align-items: center;
+  }
+}

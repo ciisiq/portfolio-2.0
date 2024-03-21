@@ -79,3 +79,42 @@
   color: var(--blue--details);
   border: 1px solid var(--blue--details);
 }
+
+@media screen and (max-width: 600px) {
+  .intro {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .custom-shape-divider-bottom-1709738698 {
+    display: none;
+  }
+
+  .left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 100%;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .intro-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .intro-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .sub-title {
+    font-size: 1rem;
+    text-align: center;
+  }
+}

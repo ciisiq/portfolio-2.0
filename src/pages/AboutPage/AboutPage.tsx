@@ -39,25 +39,23 @@ export default function AboutPage() {
       <div className="tools-used">
         <h3 className="section-title about-title">WHAT I USE</h3>
         <div className="tools-container">
-          <Marquee>
-            {toolsDev.map((tool) => (
-              <ToolsCard
-                key={tool.id}
-                id={tool.id}
-                alt={tool.alt}
-                logo={tool.logo}
-              />
-            ))}
+          {toolsDev.map((tool) => (
+            <ToolsCard
+              key={tool.id}
+              id={tool.id}
+              alt={tool.alt}
+              logo={tool.logo}
+            />
+          ))}
 
-            {toolsDesign.map((tool) => (
-              <ToolsCard
-                key={tool.id}
-                id={tool.id}
-                alt={tool.alt}
-                logo={tool.logo}
-              />
-            ))}
-          </Marquee>
+          {toolsDesign.map((tool) => (
+            <ToolsCard
+              key={tool.id}
+              id={tool.id}
+              alt={tool.alt}
+              logo={tool.logo}
+            />
+          ))}
 
           {/* <Marquee></Marquee> */}
         </div>

@@ -1,6 +1,9 @@
+import { useState } from 'react';
 import './Header.css';
 
 export default function Header() {
+  const [openMeny, SetOpenMenu] = useState<boolean>(false);
+
   return (
     <header>
       <nav>
@@ -24,12 +27,13 @@ export default function Header() {
             <a>Contact</a>
           </li>
         </ul>
-        <div className="dropdown">
+
+        {/* <div className="dropdown">
           <button className="dropbtn">EN</button>
           <div className="dropdown-content">
             <a>PT</a>
           </div>
-        </div>
+        </div> */}
       </nav>
     </header>
   );
